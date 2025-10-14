@@ -1,0 +1,82 @@
+[
+	{
+		"id": "sun",
+		"name": "Sun",
+		"secondName": "The Star",
+		"model": "/models/Sun.glb",
+		"scale": 3.0,
+		"facts": { "type": "Star", "temperature": "5500°C" }
+	},
+
+	{
+		"id": "mercury",
+		"name": "Mercury",
+		"secondName": "Mercure",
+		"model": "/models/Mercure.glb",
+		"scale": 0.38,
+		"facts": { "radius_km": 2440, "day_h": 1407, "year_d": 88 }
+	},
+
+	{
+		"id": "venus",
+		"name": "Venus",
+		"secondName": "Venus",
+		"model": "/models/Venus.glb",
+		"scale": 0.95,
+		"facts": { "radius_km": 6052, "day_h": 5832, "year_d": 225 }
+	},
+
+	{
+		"id": "earth",
+		"name": "Earth",
+		"secondName": "Terra",
+		"model": "/models/Earth.glb",
+		"scale": 1.0,
+		"facts": { "radius_km": 6371, "day_h": 24, "year_d": 365 }
+	},
+
+	{
+		"id": "mars",
+		"name": "Mars",
+		"secondName": "The Red Planet",
+		"model": "/models/Mars.glb",
+		"scale": 0.53,
+		"facts": { "radius_km": 3390, "day_h": 24.6, "year_d": 687 }
+	},
+
+	{
+		"id": "jupiter",
+		"name": "Jupiter",
+		"secondName": "The Giant",
+		"model": "/models/Jupiter.glb",
+		"scale": 11.2,
+		"facts": { "radius_km": 69911, "day_h": 9.9, "year_d": 4333 }
+	},
+
+	{
+		"id": "saturn",
+		"name": "Saturn",
+		"secondName": "Ringed Planet",
+		"model": "/models/Saturn.glb",
+		"scale": 9.45,
+		"facts": { "radius_km": 58232, "day_h": 10.7, "year_d": 10759 }
+	},
+
+	{
+		"id": "uranus",
+		"name": "Uranus",
+		"secondName": "Ice Giant",
+		"model": "/models/Uranus.glb",
+		"scale": 4.0,
+		"facts": { "radius_km": 25362, "day_h": 17, "year_d": 30687 }
+	},
+
+	{
+		"id": "neptune",
+		"name": "Neptune",
+		"secondName": "Blue Giant",
+		"model": "/models/Neptune.glb",
+		"scale": 3.9,
+		"facts": { "radius_km": 24622, "day_h": 16, "year_d": 60190 }
+	}
+]
