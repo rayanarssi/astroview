@@ -35,6 +35,20 @@ export default function SolarScene() {
 				);
 			})}
 
+			{/* EARTH & MARS */}
+			{["earth", "mars"].map((id, i) => {
+				const p = data.find((x) => x.id === id);
+				const radius = 7.2 + i * 1.8; // 7.2, 9.0
+				const speed = 0.5 + i * 0.08; // 0.5, 0.58
+				return (
+					<OrbitSystem key={id} radius={radius} speed={speed}>
+						<group userData={{ pid: p.id }}>
+							<Planet path={p.model} scale={p.scale} />
+						</group>
+					</OrbitSystem>
+				);
+			})}
+
 			<OrbitControls enablePan={false} />
 		</Canvas>
 	);
