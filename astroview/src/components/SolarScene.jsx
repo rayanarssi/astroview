@@ -49,6 +49,20 @@ export default function SolarScene() {
 				);
 			})}
 
+			{/* JUPITER & SATURN */}
+			{["jupiter", "saturn"].map((id, i) => {
+				const p = data.find((x) => x.id === id);
+				const radius = 11 + i * 2.6; // 11, 13.6
+				const speed = 0.35 + i * 0.06; // 0.35, 0.41
+				return (
+					<OrbitSystem key={id} radius={radius} speed={speed}>
+						<group userData={{ pid: p.id }}>
+							<Planet path={p.model} scale={p.scale} />
+						</group>
+					</OrbitSystem>
+				);
+			})}
+
 			<OrbitControls enablePan={false} />
 		</Canvas>
 	);
