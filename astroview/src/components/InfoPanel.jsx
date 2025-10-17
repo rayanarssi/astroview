@@ -2,34 +2,47 @@ import data from "../data/planets.json";
 import { usePlanet } from "../context/PlanetContext.jsx";
 
 export default function InfoPanel() {
-  const { selectedId, hoverId, clearSelected } = usePlanet();
-  const activeId = selectedId ?? hoverId;
-  const item = data.find((p) => p.id === activeId);
+	const { selectedId, clearSelected } = usePlanet();
+	const item = data.find((p) => p.id === activeId);
 
-  return (
-    <aside className="panel" role="complementary" aria-live="polite">
-      {item ? (
-        <>
-          <header>
-            <h2 style={{ margin: "0 0 4px" }}>{item.name}</h2>
-            {item.secondName && (
-              <p style={{ opacity: 0.8, margin: 0 }}>{item.secondName}</p>
-            )}
-          </header>
+	return (
+		<aside className={`panel ${item ? "open" : ""}`} aria-hidden="{!item}">
+			<div
+				className="card"
+				role="dialog"
+				aria-modal="true"
+				aria-labelledby="panel-title"
+			>
+				<button className="close" onClick={clearSelected} aria-label="Close">
+					✕
+				</button>
 
-          <section style={{ marginTop: 12 }}>
-            <pre style={{ whiteSpace: "pre-wrap", margin: 0 }}>
-{JSON.stringify(item.facts, null, 2)}
-            </pre>
-          </section>
+				{item && (
+					<>
+						<header className="card-header">
+							<h1 id="panel-title" className="title">
+								{item.name}
+							</h1>
+							<p className="desc">{item.secondName}</p>
+						</header>
 
-          <div style={{ marginTop: 12 }}>
-            <button onClick={clearSelected}>Close</button>
-          </div>
-        </>
-      ) : (
-        <p>Hover of klik op een planeet…</p>
-      )}
-    </aside>
-  );
+						<p className="desc">{item.description}</p>
+
+						<section className="facts" aria-label="Planet facts">
+							{Object.entries(item.facts).map(([k, v]) => (
+								<div key={k} className="fact">
+									<span className="k">{labelize(k)}</span>
+									<span className="v">{v}</span>
+								</div>
+							))}
+						</section>
+					</>
+				)}
+			</div>
+		</aside>
+	);
+}
+
+function labelize(key) {
+	return key.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase());
 }
