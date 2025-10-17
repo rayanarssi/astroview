@@ -63,6 +63,20 @@ export default function SolarScene() {
 				);
 			})}
 
+			{/* URANUS & NEPTUNE */}
+			{["uranus", "neptune"].map((id, i) => {
+				const p = data.find((x) => x.id === id);
+				const radius = 16 + i * 2.4; // 16, 18.4
+				const speed = 0.28 + i * 0.05; // 0.28, 0.33
+				return (
+					<OrbitSystem key={id} radius={radius} speed={speed}>
+						<group userData={{ pid: p.id }}>
+							<Planet path={p.model} scale={p.scale} />
+						</group>
+					</OrbitSystem>
+				);
+			})}
+
 			<OrbitControls enablePan={false} />
 		</Canvas>
 	);
