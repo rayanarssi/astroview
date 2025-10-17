@@ -2,81 +2,151 @@
 	{
 		"id": "sun",
 		"name": "Sun",
-		"secondName": "The Star",
+		"secondName": "The Star of Life",
+		"description": "The Sun is the heart of our Solar System, a giant ball of plasma that provides the energy necessary for life on Earth.",
+		"facts": {
+			"radius": "696,340 km",
+			"surfaceTemperature": "~5,500 °C",
+			"age": "4.6 billion years"
+		},
 		"model": "/models/Sun.glb",
-		"scale": 3.0,
-		"facts": { "type": "Star", "temperature": "5500°C" }
+		"visScale": 1.1,
+		"orbit": 0
 	},
 
 	{
 		"id": "mercury",
 		"name": "Mercury",
-		"secondName": "Mercure",
+		"secondName": "The Swift Planet",
+		"description": "Mercury is the smallest planet and the closest to the Sun. It has extreme temperatures and no atmosphere to retain heat.",
+		"facts": {
+			"radius": "2,440 km",
+			"orbitTime": "88 days",
+			"distanceFromSun": "57.9 million km"
+		},
 		"model": "/models/Mercure.glb",
-		"scale": 0.38,
-		"facts": { "radius_km": 2440, "day_h": 1407, "year_d": 88 }
+		"visScale": 0.15,
+		"orbit": 3.0
 	},
 
 	{
 		"id": "venus",
 		"name": "Venus",
-		"secondName": "Venus",
+		"secondName": "The Morning Star",
+		"description": "Venus is similar in size to Earth but covered in thick, toxic clouds. Its surface is hotter than Mercury’s due to a runaway greenhouse effect.",
+		"facts": {
+			"radius": "6,052 km",
+			"orbitTime": "225 days",
+			"distanceFromSun": "108.2 million km"
+		},
 		"model": "/models/Venus.glb",
-		"scale": 0.95,
-		"facts": { "radius_km": 6052, "day_h": 5832, "year_d": 225 }
+		"visScale": 0.36,
+		"orbit": 3.6
 	},
 
 	{
 		"id": "earth",
 		"name": "Earth",
-		"secondName": "Terra",
+		"secondName": "The Blue Planet",
+		"description": "Earth is our home and the only known world to support life. It has liquid water, an atmosphere, and a protective magnetic field.",
+		"facts": {
+			"radius": "6,371 km",
+			"orbitTime": "365 days",
+			"distanceFromSun": "149.6 million km"
+		},
 		"model": "/models/Earth.glb",
-		"scale": 1.0,
-		"facts": { "radius_km": 6371, "day_h": 24, "year_d": 365 }
+		"visScale": 0.4,
+		"orbit": 4.2
+	},
+
+	{
+		"id": "moon",
+		"name": "Moon",
+		"secondName": "Luna",
+		"description": "Earth’s natural satellite that shapes tides and stabilizes Earth’s rotation.",
+		"facts": {
+			"radius": "1,737 km",
+			"orbitTime": "27 days",
+			"distanceFromEarth": "384,400 km"
+		},
+		"model": "/models/Moon.glb",
+		"visScale": 0.11,
+		"orbit": 0.45,
+		"parent": "earth"
 	},
 
 	{
 		"id": "mars",
 		"name": "Mars",
 		"secondName": "The Red Planet",
+		"description": "Mars has dusty deserts, giant volcanoes and polar caps. It likely once had liquid water.",
+		"facts": {
+			"radius": "3,390 km",
+			"orbitTime": "687 days",
+			"distanceFromSun": "227.9 million km"
+		},
 		"model": "/models/Mars.glb",
-		"scale": 0.53,
-		"facts": { "radius_km": 3390, "day_h": 24.6, "year_d": 687 }
+		"visScale": 0.28,
+		"orbit": 5.0
 	},
 
 	{
 		"id": "jupiter",
 		"name": "Jupiter",
-		"secondName": "The Giant",
+		"secondName": "The Giant of Gas",
+		"description": "The largest planet with monstrous storms like the Great Red Spot.",
+		"facts": {
+			"radius": "69,911 km",
+			"orbitTime": "12 years",
+			"distanceFromSun": "778.5 million km"
+		},
 		"model": "/models/Jupiter.glb",
-		"scale": 11.2,
-		"facts": { "radius_km": 69911, "day_h": 9.9, "year_d": 4333 }
+		"visScale": 0.9,
+		"orbit": 6.2
 	},
 
 	{
 		"id": "saturn",
 		"name": "Saturn",
-		"secondName": "Ringed Planet",
+		"secondName": "The Ringed Planet",
+		"description": "Iconic rings made of ice and rock; dozens of moons.",
+		"facts": {
+			"radius": "58,232 km",
+			"orbitTime": "29 years",
+			"distanceFromSun": "1.43 billion km"
+		},
 		"model": "/models/Saturne.glb",
-		"scale": 9.45,
-		"facts": { "radius_km": 58232, "day_h": 10.7, "year_d": 10759 }
+		"visScale": 0.8,
+		"orbit": 7.4
 	},
 
 	{
 		"id": "uranus",
 		"name": "Uranus",
-		"secondName": "Ice Giant",
+		"secondName": "The Tilted Planet",
+		"description": "An ice giant that rotates on its side; pale blue from methane.",
+		"facts": {
+			"radius": "25,362 km",
+			"orbitTime": "84 years",
+			"distanceFromSun": "2.87 billion km"
+		},
 		"model": "/models/Uranus.glb",
-		"scale": 4.0,
-		"facts": { "radius_km": 25362, "day_h": 17, "year_d": 30687 }
+		"visScale": 0.55,
+		"orbit": 8.6
 	},
 
 	{
 		"id": "neptune",
 		"name": "Neptune",
-		"secondName": "Blue Giant",
+		"secondName": "The Windy Planet",
+		"description": "Deep blue with supersonic winds and violent storms.",
+		"facts": {
+			"radius": "24,622 km",
+			"orbitTime": "165 years",
+			"distanceFromSun": "4.5 billion km"
+		},
 		"model": "/models/Neptune.glb",
-		"scale": 3.9,
-		"facts": { "radius_km": 24622, "day_h": 16, "year_d": 60190 }
+		"visScale": 0.53,
+		"orbit": 9.8
 	}
 ]
