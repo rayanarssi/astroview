@@ -57,7 +57,7 @@
 		"id": "saturn",
 		"name": "Saturn",
 		"secondName": "Ringed Planet",
-		"model": "/models/Saturn.glb",
+		"model": "/models/Saturne.glb",
 		"scale": 9.45,
 		"facts": { "radius_km": 58232, "day_h": 10.7, "year_d": 10759 }
 	},
