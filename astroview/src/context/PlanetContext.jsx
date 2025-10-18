@@ -1,23 +1,28 @@
-import { createContext, useContext, useMemo, useState } from "react";
+import { createContext, useContext, useState, useMemo } from "react";
 
 const PlanetCtx = createContext(null);
 
 export function PlanetProvider({ children }) {
   const [selectedId, setSelectedId] = useState(null);
-  const [hoverId, setHoverId] = useState(null);
+  const [hoveredId, setHoveredId] = useState(null);
 
   const value = useMemo(
     () => ({
       selectedId,
       setSelectedId,
-      hoverId,
-      setHoverId,
       clearSelected: () => setSelectedId(null),
+      hoveredId,
+      setHovered: setHoveredId,
+      clearHovered: () => setHoveredId(null),
     }),
-    [selectedId, hoverId]
+    [selectedId, hoveredId]
   );
 
   return <PlanetCtx.Provider value={value}>{children}</PlanetCtx.Provider>;
 }
 
-export const usePlanet = () => useContext(PlanetCtx);
+export function usePlanet() {
+  const ctx = useContext(PlanetCtx);
+  if (!ctx) throw new Error("usePlanet must be used within PlanetProvider");
+  return ctx;
+}

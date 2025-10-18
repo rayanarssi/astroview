@@ -9,7 +9,7 @@ import Saturn from "./Saturne.jsx";
 import Uranus from "./Uranus.jsx";
 import Neptune from "./Neptune.jsx";
 
-// Map of ids -> components (ids should match planets.json)
+// Map of ids -> components (ids should match your planets.json)
 export const ModelMap = {
 	sun: Sun, //✅
 	mercury: Mercury, //✅
