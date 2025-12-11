@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 function Sun(props) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF("/models/Sun.glb");
+	const { nodes, materials } = useGLTF("models/Sun.glb");
 
 	useEffect(() => {
 		console.log("☀️ Sun model loaded:", nodes, materials);

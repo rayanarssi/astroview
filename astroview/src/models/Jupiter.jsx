@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 function Jupiter(props) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF("/models/Jupiter.glb");
+	const { nodes, materials } = useGLTF("models/Jupiter.glb");
 
 	useEffect(() => {
 		console.log("🪐 Jupiter model loaded:", nodes);

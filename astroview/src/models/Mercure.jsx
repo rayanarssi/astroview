@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 function Mercury(props) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF("/models/Mercure.glb");
+	const { nodes, materials } = useGLTF("models/Mercure.glb");
 
 	useEffect(() => {
 		console.log("🪐 Mercury (Mercure.glb) loaded:", nodes, materials);

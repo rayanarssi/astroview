@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 function Venus(props) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF("/models/Venus.glb");
+	const { nodes, materials } = useGLTF("models/Venus.glb");
 
 	useEffect(() => {
 		console.log("🪐 Venus model loaded:", nodes, materials);
