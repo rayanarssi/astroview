@@ -9,7 +9,7 @@
 			"surfaceTemperature": "~5,500 °C",
 			"age": "4.6 billion years"
 		},
-		"model": "/models/Sun.glb",
+		"model": "/Sun.glb",
 		"visScale": 1.1,
 		"orbit": 0
 	},
@@ -24,7 +24,7 @@
 			"orbitTime": "88 days",
 			"distanceFromSun": "57.9 million km"
 		},
-		"model": "/models/Mercure.glb",
+		"model": "/Mercure.glb",
 		"visScale": 0.15,
 		"orbit": 3.0
 	},
@@ -39,7 +39,7 @@
 			"orbitTime": "225 days",
 			"distanceFromSun": "108.2 million km"
 		},
-		"model": "/models/Venus.glb",
+		"model": "/Venus.glb",
 		"visScale": 0.36,
 		"orbit": 3.6
 	},
@@ -54,7 +54,7 @@
 			"orbitTime": "365 days",
 			"distanceFromSun": "149.6 million km"
 		},
-		"model": "/models/Earth.glb",
+		"model": "/Earth.glb",
 		"visScale": 0.4,
 		"orbit": 4.2
 	},
@@ -69,7 +69,7 @@
 			"orbitTime": "27 days",
 			"distanceFromEarth": "384,400 km"
 		},
-		"model": "/models/Moon.glb",
+		"model": "/Moon.glb",
 		"visScale": 0.11,
 		"orbit": 0.45,
 		"parent": "earth"
@@ -85,7 +85,7 @@
 			"orbitTime": "687 days",
 			"distanceFromSun": "227.9 million km"
 		},
-		"model": "/models/Mars.glb",
+		"model": "/Mars.glb",
 		"visScale": 0.28,
 		"orbit": 5.0
 	},
@@ -100,7 +100,7 @@
 			"orbitTime": "12 years",
 			"distanceFromSun": "778.5 million km"
 		},
-		"model": "/models/Jupiter.glb",
+		"model": "/Jupiter.glb",
 		"visScale": 0.9,
 		"orbit": 6.2
 	},
@@ -115,7 +115,7 @@
 			"orbitTime": "29 years",
 			"distanceFromSun": "1.43 billion km"
 		},
-		"model": "/models/Saturne.glb",
+		"model": "/Saturne.glb",
 		"visScale": 0.8,
 		"orbit": 7.4
 	},
@@ -130,7 +130,7 @@
 			"orbitTime": "84 years",
 			"distanceFromSun": "2.87 billion km"
 		},
-		"model": "/models/Uranus.glb",
+		"model": "/Uranus.glb",
 		"visScale": 0.55,
 		"orbit": 8.6
 	},
@@ -145,7 +145,7 @@
 			"orbitTime": "165 years",
 			"distanceFromSun": "4.5 billion km"
 		},
-		"model": "/models/Neptune.glb",
+		"model": "/Neptune.glb",
 		"visScale": 0.53,
 		"orbit": 9.8
 	}

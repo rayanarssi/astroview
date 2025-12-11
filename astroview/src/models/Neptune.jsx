@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 function Neptune(props) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF("models/Neptune.glb");
+	const { nodes, materials } = useGLTF("/Neptune.glb");
 
 	useEffect(() => {
 		console.log("🪐 Neptune model loaded:", nodes, materials);
@@ -25,6 +25,6 @@ function Neptune(props) {
 	);
 }
 
-useGLTF.preload("/models/Neptune.glb");
+useGLTF.preload("/Neptune.glb");
 
 export default Neptune;

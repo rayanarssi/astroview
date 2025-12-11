@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 function Uranus(props) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF("models/Uranus.glb");
+	const { nodes, materials } = useGLTF("/Uranus.glb");
 
 	useEffect(() => {
 		console.log("🪐 Uranus model loaded:", nodes, materials);
@@ -25,6 +25,6 @@ function Uranus(props) {
 	);
 }
 
-useGLTF.preload("/models/Uranus.glb");
+useGLTF.preload("/Uranus.glb");
 
 export default Uranus;

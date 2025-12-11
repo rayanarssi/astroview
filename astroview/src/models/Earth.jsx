@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 function Earth(props) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF("models/Earth.glb");
+	const { nodes, materials } = useGLTF("/Earth.glb");
 
 	useEffect(() => {
 		console.log("🌍 Earth model loaded:", nodes);
@@ -20,6 +20,6 @@ function Earth(props) {
 	);
 }
 
-useGLTF.preload("/models/Earth.glb");
+useGLTF.preload("/Earth.glb");
 
 export default Earth;

@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 function Mars(props) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF("models/Mars.glb");
+	const { nodes, materials } = useGLTF("/Mars.glb");
 
 	useEffect(() => {
 		console.log("🪐 Mars model loaded:", nodes, materials);
@@ -25,6 +25,6 @@ function Mars(props) {
 	);
 }
 
-useGLTF.preload("/models/Mars.glb");
+useGLTF.preload("/Mars.glb");
 
 export default Mars;

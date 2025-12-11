@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 function Saturn(props) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF("models/Saturne.glb");
+	const { nodes, materials } = useGLTF("/Saturne.glb");
 
 	useEffect(() => {
 		console.log("🪐 Saturn (Saturne.glb) loaded:", nodes, materials);
@@ -27,6 +27,6 @@ function Saturn(props) {
 	);
 }
 
-useGLTF.preload("/models/Saturne.glb");
+useGLTF.preload("/Saturne.glb");
 
 export default Saturn;
